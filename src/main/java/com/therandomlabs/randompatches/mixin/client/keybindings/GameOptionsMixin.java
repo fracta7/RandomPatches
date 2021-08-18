@@ -25,8 +25,8 @@ package com.therandomlabs.randompatches.mixin.client.keybindings;
 
 import com.therandomlabs.randompatches.client.KeysAccessor;
 import com.therandomlabs.randompatches.client.RPKeyBindingHandler;
-import net.minecraft.client.options.GameOptions;
-import net.minecraft.client.options.KeyBinding;
+import net.minecraft.client.option.GameOptions;
+import net.minecraft.client.option.KeyBinding;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
@@ -35,8 +35,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+
 @Mixin(GameOptions.class)
-public class GameOptionsMixin implements KeysAccessor {
+public abstract class GameOptionsMixin implements KeysAccessor, GameOptionMixin {
 	@Shadow
 	@Final
 	@Mutable

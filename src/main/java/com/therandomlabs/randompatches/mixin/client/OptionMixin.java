@@ -24,7 +24,7 @@
 package com.therandomlabs.randompatches.mixin.client;
 
 import com.therandomlabs.randompatches.RandomPatches;
-import net.minecraft.client.options.Option;
+import net.minecraft.client.option.Option;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.Constant;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;

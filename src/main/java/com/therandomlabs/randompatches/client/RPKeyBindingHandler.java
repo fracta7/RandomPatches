@@ -36,11 +36,12 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.GameMenuScreen;
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.options.NarratorOptionsScreen;
+import net.minecraft.client.gui.screen.option.NarratorOptionsScreen;
+
 import net.minecraft.client.gui.widget.TextFieldWidget;
-import net.minecraft.client.options.GameOptions;
-import net.minecraft.client.options.KeyBinding;
-import net.minecraft.client.options.Option;
+import net.minecraft.client.option.GameOptions;
+import net.minecraft.client.option.KeyBinding;
+import net.minecraft.client.option.Option;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.util.Identifier;
 import org.apache.commons.lang3.ArrayUtils;
